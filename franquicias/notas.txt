@@ -1,0 +1,16 @@
+dashboard
+saldo de ventas historico   numero de pedidos    visitas     tasa de conversion
+
+grafico barras va ser de ventas
+eje Y monto o numero de pedidos
+eje X tiempo dias semanas meses trimestres semestral anual o rango personalizado                 ultimos 10 pedidos 2/3 de grilla
+												fecha n factura monto status ver detalle
+												y ver detalle: invoice de la pag
+grafico barras visitas
+eje Y paginas visitadas visitantes unicos y visitantes recurrentes
+eje X tiempo
+
+
+
+statcounter gimalca gimalca
+

@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+<title>PideRápido - Tu aplicación de ventas online</title>
+<!-- Bootstrap core CSS -->
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- add theme styles for this template -->
+<link id="pagestyle" rel="stylesheet" type="text/css" href="assets/css/skin-1.css">
+
+<!-- Custom styles for this template -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+<!-- css3 animation effect for this template -->
+<link href="assets/css/animate.css" rel="stylesheet">
+
+<!-- styles needed by carousel slider -->
+<link href="assets/css/owl.css" rel="stylesheet">
+<link href="assets/css/owl (1).css" rel="stylesheet">
+
+<!-- styles needed by checkRadio -->
+<link href="assets/css/ion.css" rel="stylesheet">
+<link href="assets/css/ion.checkRadio.css" rel="stylesheet">
+
+<!-- styles needed by mCustomScrollbar -->
+<link href="assets/css/jquery.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Modal Login start -->
+<div class="modal signUpContent fade" id="ModalLogin" tabindex="-1" role="dialog">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+        <h3 class="modal-title-site text-center"> Ingresar a PideRápido </h3>
+      </div>
+      <div class="modal-body">
+        <div class="form-group login-username">
+          <div>
+            <input name="log" id="login-user" class="form-control input" size="20" placeholder="Enter Username" type="text">
+          </div>
+        </div>
+        <div class="form-group login-password">
+          <div>
+            <input name="Password" id="login-password" class="form-control input" size="20" placeholder="Password" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <div class="checkbox login-remember">
+              <label>
+                <input name="rememberme" value="forever" checked="checked" type="checkbox">
+                Recordarme </label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <input name="submit" class="btn  btn-block btn-lg btn-primary" value="LOGIN" type="submit">
+          </div>
+        </div>
+        <!--userForm--> 
+        
+      </div>
+      <div class="modal-footer">
+        <p class="text-center"> Not here before? <a data-toggle="modal" data-dismiss="modal" href="#ModalSignup"> Iniciar Sesión. </a> <br>
+          <a href="forgot-password.html"> Olvido contraseña? </a> </p>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+    
+  </div>
+  <!-- /.modal-dialog --> 
+  
+</div>
+<!-- /.Modal Login --> 
+
+<!-- Modal Signup start -->
+<!-- <div class="modal signUpContent fade" id="ModalSignup" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+        <h3 class="modal-title-site text-center"> REGISTER </h3>
+      </div>
+      <div class="modal-body">
+        <div class="control-group"> <a class="fb_button btn  btn-block btn-lg " href="#"> SIGNUP WITH FACEBOOK </a> </div>
+        <h5 style="padding:10px 0 10px 0;" class="text-center"> OR </h5>
+        <div class="form-group reg-username">
+          <div>
+            <input name="login" class="form-control input" size="20" placeholder="Enter Username" type="text">
+          </div>
+        </div>
+        <div class="form-group reg-email">
+          <div>
+            <input name="reg" class="form-control input" size="20" placeholder="Enter Email" type="text">
+          </div>
+        </div>
+        <div class="form-group reg-password">
+          <div>
+            <input name="password" class="form-control input" size="20" placeholder="Password" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <div class="checkbox login-remember">
+              <label>
+                <input name="rememberme" id="rememberme" value="forever" checked="checked" type="checkbox">
+                Remember Me </label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <input name="submit" class="btn  btn-block btn-lg btn-primary" value="REGISTER" type="submit">
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <p class="text-center"> Already member? <a data-toggle="modal" data-dismiss="modal" href="#ModalLogin"> Sign in </a> </p>
+      </div>
+    </div>
+    
+  </div>
+ 
+</div> -->
+<!-- /.ModalSignup End --> 
+
+<!-- Fixed navbar start -->
+<div class="navbar navbar-tshop navbar-fixed-top megamenu" role="navigation">
+  <div class="navbar-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+          <!-- <div class="pull-left ">
+            <ul class="userMenu ">
+              <li> <a href="#"> <span class="hidden-xs">Ayuda</span><i class="glyphicon glyphicon-info-sign hide visible-xs "></i> </a> </li>
+              <li class="phone-number"> <a href="callto:+584149108744"> <span> <i class="glyphicon glyphicon-phone-alt "></i></span> <span class="hidden-xs" style="margin-left:5px"> +58 414 9108744 </span> </a> </li>
+            </ul>
+          </div> -->
+        </div>
+        <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding">
+          <div class="pull-right">
+            
+			<ul class="userMenu">
+			
+				  <li><a class="fa fa-facebook tooltipHere" href="#" data-original-title="Facebook" data-toggle="tooltip" data-placement="bottom" title=""></a></li>
+				  <li><a class="fa fa-twitter tooltipHere" href="#" data-original-title="twitter" data-toggle="tooltip" data-placement="bottom" title=""></a></li>
+				  <li><a class="fa fa-instagram tooltipHere" href="#" data-original-title="instagram" data-toggle="tooltip" data-placement="bottom" title=""></a></li>
+				  <li style="margin-right: 25px;"><a class="fa fa-youtube tooltipHere" href="#" data-original-title="youtube" data-toggle="tooltip" data-placement="bottom" title=""></a></li>
+			   
+			  <li> <a href="account-1.html"><span class="hidden-xs"> Mi cuenta</span> <i class="glyphicon glyphicon-user hide visible-xs "></i></a> </li>
+              <li> <a href="#" data-toggle="modal" data-target="#ModalLogin"> <span class="hidden-xs">Iniciar Sesión</span> <i class="glyphicon glyphicon-log-in hide visible-xs "></i> </a> </li>
+              <li class="hidden-xs"> <a href="#" data-toggle="modal" data-target="#ModalSignup"> Regístrate </a> </li>
+			</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/.navbar-top-->
+  
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only"> Toggle navigation </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> </button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-cart"> <i class="fa fa-shopping-cart colorWhite"> </i> <span class="cartRespons colorWhite"> Carrito ($210.00) </span> </button>
+      <a class="navbar-brand " href="index.html"> <img src="images/logo2.png" alt="TSHOP" style=""> </a> 
+      
+      <!-- this part for mobile -->
+      <!-- <div class="search-box pull-right hidden-lg hidden-md hidden-sm">
+        <div class="input-group">
+          <button class="btn btn-nobg getFullSearch" type="button"> <i class="fa fa-search"> </i> </button>
+        </div>
+      </div> -->
+    </div>
+    
+    <!-- this part is duplicate from cartMenu  keep it for mobile -->
+    <div class="navbar-cart  collapse">
+      <div class="cartMenu  col-lg-4 col-xs-12 col-md-4 ">
+        <div class="w100 miniCartTable scroll-pane">
+          <table>
+            <tbody>
+              <tr class="miniCartProduct">
+                <td style="20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a> </div></td>
+                <td style="40%"><div class="miniCartDescription">
+                    <h4> <a href="product-details.html"> TSHOP T shirt Black </a> </h4>
+                    <span class="size"> 12 x 1.5 L </span>
+                    <div class="price"> <span> $8.80 </span> </div>
+                  </div></td>
+                <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                <td style="5%" class="delete"><a> x </a></td>
+              </tr>
+              <tr class="miniCartProduct">
+                <td style="20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/2.jpg" alt="img"> </a> </div></td>
+                <td style="40%"><div class="miniCartDescription">
+                    <h4> <a href="product-details.html"> TSHOP T shirt Black </a> </h4>
+                    <span class="size"> 12 x 1.5 L </span>
+                    <div class="price"> <span> $8.80 </span> </div>
+                  </div></td>
+                <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                <td style="5%" class="delete"><a> x </a></td>
+              </tr>
+              <tr class="miniCartProduct">
+                <td style="20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/5.jpg" alt="img"> </a> </div></td>
+                <td style="40%"><div class="miniCartDescription">
+                    <h4> <a href="product-details.html"> TSHOP T shirt Black </a> </h4>
+                    <span class="size"> 12 x 1.5 L </span>
+                    <div class="price"> <span> $8.80 </span> </div>
+                  </div></td>
+                <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                <td style="5%" class="delete"><a> x </a></td>
+              </tr>
+              <tr class="miniCartProduct">
+                <td style="20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a> </div></td>
+                <td style="40%"><div class="miniCartDescription">
+                    <h4> <a href="product-details.html"> TSHOP T shirt Black </a> </h4>
+                    <span class="size"> 12 x 1.5 L </span>
+                    <div class="price"> <span> $8.80 </span> </div>
+                  </div></td>
+                <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                <td style="5%" class="delete"><a> x </a></td>
+              </tr>
+              <tr class="miniCartProduct">
+                <td style="20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a> </div></td>
+                <td style="40%"><div class="miniCartDescription">
+                    <h4> <a href="product-details.html"> TSHOP T shirt Black </a> </h4>
+                    <span class="size"> 12 x 1.5 L </span>
+                    <div class="price"> <span> $8.80 </span> </div>
+                  </div></td>
+                <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                <td style="5%" class="delete"><a> x </a></td>
+              </tr>
+              <tr class="miniCartProduct">
+                <td style="20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/4.jpg" alt="img"> </a> </div></td>
+                <td style="40%"><div class="miniCartDescription">
+                    <h4> <a href="product-details.html"> TSHOP T shirt Black </a> </h4>
+                    <span class="size"> 12 x 1.5 L </span>
+                    <div class="price"> <span> $8.80 </span> </div>
+                  </div></td>
+                <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                <td style="5%" class="delete"><a> x </a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--/.miniCartTable-->
+        
+        <div class="miniCartFooter  miniCartFooterInMobile text-right">
+          <h3 class="text-right subtotal"> Subtotal: $210 </h3>
+          <a class="btn btn-sm btn-danger"> <i class="fa fa-shopping-cart"> </i> Ver Carrito </a> <a class="btn btn-sm btn-primary"> CHECKOUT </a> </div>
+        <!--/.miniCartFooter--> 
+        
+      </div>
+      <!--/.cartMenu--> 
+    </div>
+    <!--/.navbar-cart-->
+    
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"> <a href="#"> Inicio </a> </li>
+        <li class="dropdown megamenu-fullwidth"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> Encuéntralo </b> </a>
+         <!--  <ul class="dropdown-menu">
+            <li class="megamenu-content ">
+              <ul class="col-lg-3  col-sm-3 col-md-3 unstyled noMarginLeft newCollectionUl">
+                <li class="no-border">
+                  <p class="promo-1"> <strong> NEW COLLECTION </strong> </p>
+                </li>
+                <li> <a href="category.html"> ALL NEW PRODUCTS </a> </li>
+                <li> <a href="category.html"> NEW TOPS </a> </li>
+                <li> <a href="category.html"> NEW SHOES </a> </li>
+                <li> <a href="category.html"> NEW TSHIRT </a> </li>
+                <li> <a href="category.html"> NEW TSHOP </a> </li>
+              </ul>
+              <ul class="col-lg-3  col-sm-3 col-md-3  col-xs-4">
+                <li> <a class="newProductMenuBlock" href="product-details.html"> <img class="img-responsive" src="images/site/promo1.jpg" alt="product"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> JEANS </span> </a> </li>
+              </ul>
+              <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                <li> <a class="newProductMenuBlock" href="product-details.html"> <img class="img-responsive" src="images/site/promo2.jpg" alt="product"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> PARTY DRESS </span> </a> </li>
+              </ul>
+              <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                <li> <a class="newProductMenuBlock" href="product-details.html"> <img class="img-responsive" src="images/site/promo3.jpg" alt="product"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> SHOES </span> </a> </li>
+              </ul>
+            </li>
+          </ul> -->
+        </li>
+        
+        <!-- change width of megamenu = use class > megamenu-fullwidth, megamenu-60width, megamenu-40width -->
+        <li class="dropdown megamenu-80width "> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> Comprar Gift-card <b class="caret"> </b> </a>
+          <ul class="dropdown-menu">
+            <li class="megamenu-content"> 
+              
+              <!-- megamenu-content -->
+              
+              <ul class="col-lg-2  col-sm-2 col-md-2  unstyled noMarginLeft">
+                <li>
+                  <p> <strong> Women Collection </strong> </p>
+                </li>
+                <li> <a href="#"> Kameez </a> </li>
+                <li> <a href="#"> Tops </a> </li>
+                <li> <a href="#"> Shoes </a> </li>
+                <li> <a href="#"> T shirt </a> </li>
+                <li> <a href="#"> TSHOP </a> </li>
+                <li> <a href="#"> Party  Dress </a> </li>
+                <li> <a href="#"> Women Fragrances </a> </li>
+              </ul>
+              <ul class="col-lg-2  col-sm-2 col-md-2  unstyled">
+                <li>
+                  <p> <strong> Men Collection </strong> </p>
+                </li>
+                <li> <a href="#"> Panjabi </a> </li>
+                <li> <a href="#"> Male Fragrances </a> </li>
+                <li> <a href="#"> Scarf </a> </li>
+                <li> <a href="#"> Sandal </a> </li>
+                <li> <a href="#"> Underwear </a> </li>
+                <li> <a href="#"> Winter Collection </a> </li>
+                <li> <a href="#"> Men Accessories </a> </li>
+              </ul>
+              <ul class="col-lg-2  col-sm-2 col-md-2  unstyled">
+                <li>
+                  <p> <strong> Top Brands </strong> </p>
+                </li>
+                <li> <a href="#"> Diesel </a> </li>
+                <li> <a href="#"> Farah </a> </li>
+                <li> <a href="#"> G-Star RAW </a> </li>
+                <li> <a href="#"> Lyle & Scott </a> </li>
+                <li> <a href="#"> Pretty Green </a> </li>
+                <li> <a href="#"> TSHOP </a> </li>
+                <li> <a href="#"> TANJIM </a> </li>
+              </ul>
+              <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-6">
+                <li class="no-margin productPopItem "> <a href="product-details.html"> <img class="img-responsive" src="images/site/g4.jpg" alt="img"> </a> <a class="text-center productInfo alpha90" href="product-details.html"> Eodem modo typi <br>
+                  <span> $60 </span> </a> </li>
+              </ul>
+              <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-6">
+                <li class="no-margin productPopItem relative"> <a href="product-details.html"> <img class="img-responsive" src="images/site/g5.jpg" alt="img"> </a> <a class="text-center productInfo alpha90" href="product-details.html"> Eodem modo typi <br>
+                  <span> $60 </span> </a> </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown megamenu-fullwidth"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> Descuentos <b class="caret"> </b> </a>
+          <ul class="dropdown-menu">
+            <li class="megamenu-content"> 
+              
+              <!-- megamenu-content -->
+              
+              <h3 class="promo-1 no-margin hidden-xs"> 28+ HTML PAGES ONLY $12 || AVAILABLE ONLY AT WRAP BOOTSTRAP </h3>
+              <h3 class="promo-1sub hidden-xs"> Complete Parallax E-Commerce Boostrap Template, Responsive on any Device, 10+ color Theme + Parallax Effect </h3>
+              <ul class="col-lg-2  col-sm-2 col-md-2 unstyled">
+                <li class="no-border">
+                  <p> <strong> Home Pages </strong> </p>
+                </li>
+                <li> <a href="index.html"> Home Version 1 </a> </li>
+                <li> <a href="index2.html"> Home Version 2 </a> </li>
+                <li> <a href="index3.html"> Home Version 3 (BOXES) </a> </li>
+                <li> <a href="index4.html"> Home Version 4 (LOOK 2)</a> </li>
+                <li> <a href="index5.html"> Home Version 5 (LOOK 3)</a> </li>
+                <li> <a href="index-header2.html"> Header Version 2 </a> </li>
+                <li> <a href="index-header3.html"> Header Version 3 </a> </li>
+                <li> <a href="index-static-search.html">Header Version 4<br>
+                  ( Static Search Form)</a> </li>
+              </ul>
+              <ul class="col-lg-2  col-sm-2 col-md-2 unstyled">
+                <li class="no-border">
+                  <p> <strong> Featured Pages </strong> </p>
+                </li>
+                <li> <a href="category.html"> Category </a> </li>
+                <li> <a href="sub-category.html"> Sub Category </a> </li>
+                <li> <a href="category-list.html"> Category List View </a> </li>
+                <li> <a href="product-details.html"> Product Details Version 1 </a> </li>
+                <li> <a href="product-details-style2.html"> Product Details Version 2 </a> </li>
+                <li> <a href="product-details-style3.html"> Product Details Version 3  (Custom Thumbnail Position)</a> </li>
+                  <li> <a href="single-product-modal.html"> Single Product Details Modal</a></li>
+ <li> <a href="single-subscribe-modal.html"> Single Subscribe Modal</a></li>
+              </ul>
+              <ul class="col-lg-2  col-sm-2 col-md-2 unstyled">
+                <li class="no-border">
+                  <p> <strong> &nbsp; </strong> </p>
+                </li>
+                <li> <a href="cart.html"> Cart </a> </li>
+                <li> <a href="about-us.html"> About us </a> </li>
+                <li> <a href="about-us-2.html"> About us 2 (no parallax) </a> </li>
+                <li> <a href="contact-us.html"> Contact us </a> </li>
+                <li> <a href="contact-us-2.html"> Contact us 2 (No Fixed Map) </a> </li>
+                <li> <a href="terms-conditions.html"> Terms &amp; Conditions </a> </li>
+              </ul>
+              <ul class="col-lg-2  col-sm-2 col-md-2 unstyled">
+                <li class="no-border">
+                  <p> <strong> Checkout </strong> </p>
+                </li>
+                <li> <a href="checkout-0.html"> Checkout Before </a> </li>
+                <li> <a href="checkout-1.html"> checkout step 1 </a> </li>
+                <li> <a href="checkout-2.html"> checkout step 2 </a> </li>
+                <li> <a href="checkout-3.html"> checkout step 3 </a> </li>
+                <li> <a href="checkout-4.html"> checkout step 4 </a> </li>
+                <li> <a href="checkout-5.html"> checkout step 5 </a> </li>
+              </ul>
+              <ul class="col-lg-2  col-sm-2 col-md-2 unstyled">
+                <li class="no-border">
+                  <p> <strong> User Account </strong> </p>
+                </li>
+                <li> <a href="account-1.html"> Account Login </a> </li>
+                <li> <a href="account.html"> My Account </a> </li>
+                <li> <a href="my-address.html"> My Address </a> </li>
+                <li> <a href="user-information.html"> User information </a> </li>
+                <li> <a href="wishlist.html"> Wisth list </a> </li>
+                <li> <a href="order-list.html"> Order list </a> </li>
+                <li> <a href="forgot-password.html"> Forgot Password </a> </li>
+              </ul>
+              <ul class="col-lg-2  col-sm-2 col-md-2 unstyled">
+                <li class="no-border">
+                  <p> <strong> &nbsp; </strong> </p>
+                </li>
+                <li> <a href="error-page.html"> Error Page </a> </li>
+                <li> <a href="blank-page.html"> Blank Page </a> </li>
+                <li> <a href="form.html"> Basic Form Element </a> </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+		<li class="dropdown megamenu-80width "> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> Cómo funciona </b> </a></li>
+		<li class="dropdown megamenu-80width "> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> Contacto </a></li>
+		
+      </ul>
+      
+      <!--- this part will be hidden for mobile version -->
+      <div class="nav navbar-nav navbar-right hidden-xs">
+        <div class="dropdown  cartMenu "> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-shopping-cart"> </i> <span class="cartRespons"> Carrito ($210.00) </span> <b class="caret"> </b> </a>
+          <div class="dropdown-menu col-lg-4 col-xs-12 col-md-4 ">
+            <div class="w100 miniCartTable scroll-pane">
+              <table>
+                <tbody>
+                  <tr class="miniCartProduct">
+                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a> </div></td>
+                    <td style="width:40%"><div class="miniCartDescription">
+                        <h4> <a href="product-details.html"> TSHOP Tshirt DO9 </a> </h4>
+                        <span class="size"> 12 x 1.5 L </span>
+                        <div class="price"> <span> $22 </span> </div>
+                      </div></td>
+                    <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                    <td style="width:15%" class="miniCartSubtotal"><span> $33 </span></td>
+                    <td style="width:5%" class="delete"><a> x </a></td>
+                  </tr>
+                  <tr class="miniCartProduct">
+                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/2.jpg" alt="img"> </a> </div></td>
+                    <td style="width:40%"><div class="miniCartDescription">
+                        <h4> <a href="product-details.html"> TShir TSHOP 09 </a> </h4>
+                        <span class="size"> 12 x 1.5 L </span>
+                        <div class="price"> <span> $15 </span> </div>
+                      </div></td>
+                    <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                    <td style="width:15%" class="miniCartSubtotal"><span> $120 </span></td>
+                    <td style="width:5%" class="delete"><a> x </a></td>
+                  </tr>
+                  <tr class="miniCartProduct">
+                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/5.jpg" alt="img"> </a> </div></td>
+                    <td style="width:40%"><div class="miniCartDescription">
+                        <h4> <a href="product-details.html"> Tshir 2014 </a> </h4>
+                        <span class="size"> 12 x 1.5 L </span>
+                        <div class="price"> <span> $30 </span> </div>
+                      </div></td>
+                    <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                    <td style="width:15%" class="miniCartSubtotal"><span> $80 </span></td>
+                    <td style="width:5%" class="delete"><a> x </a></td>
+                  </tr>
+                  <tr class="miniCartProduct">
+                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a> </div></td>
+                    <td style="width:40%"><div class="miniCartDescription">
+                        <h4> <a href="product-details.html"> TSHOP T shirt DO20 </a> </h4>
+                        <span class="size"> 12 x 1.5 L </span>
+                        <div class="price"> <span> $15 </span> </div>
+                      </div></td>
+                    <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                    <td style="width:15%" class="miniCartSubtotal"><span> $55 </span></td>
+                    <td style="width:5%" class="delete"><a> x </a></td>
+                  </tr>
+                  <tr class="miniCartProduct">
+                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/4.jpg" alt="img"> </a> </div></td>
+                    <td style="width:40%"><div class="miniCartDescription">
+                        <h4> <a href="product-details.html"> T shirt Black </a> </h4>
+                        <span class="size"> 12 x 1.5 L </span>
+                        <div class="price"> <span> $44 </span> </div>
+                      </div></td>
+                    <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                    <td style="width:15%" class="miniCartSubtotal"><span> $40 </span></td>
+                    <td style="width:5%" class="delete"><a> x </a></td>
+                  </tr>
+                  <tr class="miniCartProduct">
+                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/site/winter.jpg" alt="img"> </a> </div></td>
+                    <td style="width:40%"><div class="miniCartDescription">
+                        <h4> <a href="product-details.html"> G Star T shirt </a> </h4>
+                        <span class="size"> 12 x 1.5 L </span>
+                        <div class="price"> <span> $80 </span> </div>
+                      </div></td>
+                    <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                    <td style="width:15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                    <td style="width:5%" class="delete"><a> x </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--/.miniCartTable-->
+            
+            <div class="miniCartFooter text-right">
+              <h3 class="text-right subtotal"> Subtotal: $210 </h3>
+              <a class="btn btn-sm btn-danger"> <i class="fa fa-shopping-cart"> </i> Ver carrito </a> <a class="btn btn-sm btn-primary"> Checkout </a> </div>
+            <!--/.miniCartFooter--> 
+            
+          </div>
+          <!--/.dropdown-menu--> 
+        </div>
+        <!--/.cartMenu-->
+        
+        <!-- <div class="search-box">
+          <div class="input-group">
+            <button class="btn btn-nobg getFullSearch" type="button"> <i class="fa fa-search"> </i> </button>
+          </div>
+         
+        </div> -->
+        <!--/.search-box --> 
+      </div>
+      <!--/.navbar-nav hidden-xs--> 
+    </div>
+    <!--/.nav-collapse --> 
+    
+  </div>
+  <!--/.container -->
+  
+  <div class="search-full text-right"> <a class="pull-right search-close"> <i class=" fa fa-times-circle"> </i> </a>
+    <div class="searchInputBox pull-right">
+      <input type="search" data-searchurl="search?=" name="q" placeholder="Escriba su búsqueda" class="search-input">
+      <button class="btn-nobg search-btn" type="submit"> <i class="fa fa-search"> </i> </button>
+    </div>
+  </div>
+  <!--/.search-full--> 
+  
+</div>
+
+<div class="banner">
+  <div class="full-container">
+    <div class="slider-content">
+      <ul id="pager" class="container">
+      </ul>
+      <div class="slider slider-v2">
+        <div class="slider-item slider-item-img1 " data-cycle-pager-template="<a href=#> franquicias </a>">
+          <div class="sliderInfo">
+            <div class="container">
+              <div class="col-lg-5 col-md-5 col-sm-5 pull-right sliderText dark alpha80 hidden-xs">
+                <div class="inner">
+                  <h1>Buscar por Franquicia</h1>
+                  <p class="hidden-xs">Las cadenas de alimentos mas populares confían en Pide Rápido, busca la que mas te provoque y haz tu pedido sin hacer cola. </p>
+                  <a href="category.html" class="slide-link">Buscar <span class="arrowUnicode">►</span></a> </div>
+              </div>
+            </div>
+          </div>
+          <img alt="img" src="images/slider/sp1.jpg" class="img-responsive parallaximg sliderImg"> </div>
+        
+        <div class="slider-item slider-item-img2  parallax" data-cycle-pager-template="<a href=#> Ciudad </a>">
+          <div class="sliderInfo">
+            <div class="container">
+              <div class="col-lg-5 col-md-5 col-sm-5 pull-left sliderText dark alpha80 hidden-xs">
+                <div class="inner">
+                  <h1>Buscar por Ciudad</h1>
+                  <p class="hidden-xs">Averigua qué locales de tu ciudad están suscritos a nuestra plataforma.</p>
+                  <a href="category.html" class="slide-link">Buscar <span class="arrowUnicode">►</span></a> </div>
+              </div>
+            </div>
+          </div>
+          <img alt="img" src="images/slider/sp2.jpg" class="img-responsive parallaximg sliderImg"> </div>
+        
+        <div class="slider-item slider-item-img3  parallax" data-cycle-pager-template="<a href=#> Promociones </a>">
+          <div class="sliderInfo">
+            <div class="container">
+              <div class="col-lg-4 col-md-4 col-sm-5 pull-right sliderText dark alpha80 transformRight hidden-xs">
+                <div class="inner">
+                  <h1> Promociones</h1>
+                  <p class="hidden-xs">Ahorra dinero y disfruta de las promociones que Pide Rápido trae para ti</p>
+                  <a href="category.html" class="slide-link">Buscar<span class="arrowUnicode">►</span></a> </div>
+              </div>
+            </div>
+          </div>
+          <img alt="img" src="images/slider/sp3.jpg" class="img-responsive parallaximg sliderImg"> </div>
+      </div>
+    
+	</div>
+    <!--/.slider-content--> 
+  </div>
+  <!--/.full-container--> 
+</div>
+<!--/.banner style2-->
+
+
+
+<div class="container main-container"> 
+  <div style="clear:both"></div>
+  <div class="col-lg-12 globalPaddingTop">
+    <h3 class="section-title style2 text-center">
+		<span>Franquicias Populares</span>
+	</h3>
+  </div>
+  <div class="row featuredPostContainer ">
+    <div class="featuredImageLook3 col-lg-12">
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xs-min-12">
+        <div class="inner">
+          <div class="box-content-overly box-content-overly-white">
+            <div class="box-text-table">
+              <div class="box-text-cell ">
+                <div class="box-text-cell-inner dark">
+                  <h1 class="uppercase">Burger King</h1>
+                  <p>Veggies es bonus vobis, proinde vos postulo essum magis 
+                    kohlrabi welsh onion daikon amaranth.</p>
+                  <hr class="submini">
+                  <a class="btn btn-inverse"> Ver Franquicia</a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-title"></div>
+          <a class="img-block" href="#"> <img class="img-responsive" src="images/look3/bk.jpg" alt="img"></a></div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xs-min-12">
+        <div class="inner">
+          <div class="box-content-overly box-content-overly-white">
+            <div class="box-text-table">
+              <div class="box-text-cell ">
+                <div class="box-text-cell-inner dark">
+                  <h1 class="uppercase"> KFC</h1>
+                  <p>Veggies es bonus vobis, proinde vos postulo essum magis 
+                    kohlrabi welsh onion daikon amaranth.</p>
+                  <hr class="submini">
+                  <a class="btn btn-inverse"> Ver Franquicia</a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-title"> </div>
+          <a class="img-block" href="#"> <img class="img-responsive" src="images/look3/kfc.jpg" alt="img"></a></div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xs-min-12">
+        <div class="inner">
+          <div class="box-content-overly box-content-overly-white">
+            <div class="box-text-table">
+              <div class="box-text-cell ">
+                <div class="box-text-cell-inner dark">
+                  <h1 class="uppercase">Subway</h1>
+                  <p>Veggies es bonus vobis, proinde vos postulo essum magis 
+                    kohlrabi welsh onion daikon amaranth.</p>
+                  <hr class="submini">
+                  <a class="btn btn-inverse">Ver Franquicia</a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-title"></div>
+          <a class="img-block" href="#"> <img class="img-responsive" src="images/look3/subway.jpg" alt="img"></a></div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xs-min-12">
+        <div class="inner">
+          <div class="box-content-overly box-content-overly-white">
+            <div class="box-text-table">
+              <div class="box-text-cell ">
+                <div class="box-text-cell-inner dark">
+                  <h1 class="uppercase">Pepitomanía</h1>
+                  <p>Veggies es bonus vobis, proinde vos postulo essum magis 
+                    kohlrabi welsh onion daikon amaranth.</p>
+                  <hr class="submini">
+                  <a class="btn btn-inverse">Ver Franquicia</a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-title"></div>
+          <a class="img-block" href="#"> <img class="img-responsive" src="images/look3/kepen.jpg" alt="img"></a></div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xs-min-12">
+        <div class="inner">
+          <div class="box-content-overly box-content-overly-white">
+            <div class="box-text-table">
+              <div class="box-text-cell ">
+                <div class="box-text-cell-inner dark">
+                  <h1 class="uppercase">Bonsai Sushi</h1>
+                  <p>Veggies es bonus vobis, proinde vos postulo essum magis 
+                    kohlrabi welsh onion daikon amaranth.</p>
+                  <hr class="submini">
+                  <a class="btn btn-inverse">Ver Franquicia</a> </div>
+              </div>
+            </div>
+          </div>
+          <!--/.box-content-overly -->
+          <div class="img-title"></div>
+          <a class="img-block" href="#"> <img class="img-responsive" src="images/look3/bonsai.jpg" alt="img"></a></div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xs-min-12">
+        <div class="inner">
+          <div class="box-content-overly box-content-overly-white">
+            <div class="box-text-table">
+              <div class="box-text-cell ">
+                <div class="box-text-cell-inner dark">
+                  <h1 class="uppercase">Pizza Hut</h1>
+                  <p>Veggies es bonus vobis, proinde vos postulo essum magis 
+                    kohlrabi welsh onion daikon amaranth.</p>
+                  <hr class="submini">
+                  <a class="btn btn-inverse">Ver Franquicia</a> </div>
+              </div>
+            </div>
+          </div>
+          <!--/.box-content-overly -->
+          <div class="img-title"></div>
+          <a class="img-block" href="#"> <img class="img-responsive" src="images/look3/pizzahut.jpg" alt="img"></a></div>
+      </div>
+    </div>
+    <!--/.featuredImageLook3--> 
+  </div>
+  
+  <!--/.featuredPostContainer--> 
+</div>
+<!-- /main container -->
+
+<div class="parallax-section parallax-image-1">
+  <div class="container">
+    <div class="row ">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="parallax-content clearfix">
+       
+          <h2 class="uppercase">¡Encuéntralo!</h2><br>
+          <h3> Elige qué quieres comer y dónde, que nosotros lo buscamos por ti</h3>
+          <div style="clear:both"></div>
+			<a class="btn btn-discover "> <i class="fa fa-shopping-cart"></i> Buscar </a> 
+		</div>
+      </div>
+    </div>
+    <!--/.row--> 
+  </div>
+  <!--/.container--> 
+</div>
+<!--/.parallax-image-1-->
+
+<div class="container main-container"> 
+  
+  <!-- Main component call to action -->
+  
+  <div class="morePost row featuredPostContainer style2 globalPaddingTop ">
+    <h3 class="section-title style2 text-center"><span>Productos</span></h3>
+    <div class="container">
+      <div class="row xsResponse">
+       
+        <!--/.item-->
+       
+        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="product">
+          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
+          <i class="glyphicon glyphicon-heart"></i>
+          </a>
+          
+            <div class="image">  
+          <div class="quickview">
+              <a title="Ver combo" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Ver combo </a>
+             </div><a href="product-details.html"><img src="images/product/combo1.jpg" alt="img" class="img-responsive"></a> </div>
+            <div class="description">
+              <h4><a href="product-details.html">Combo #5</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <span class="size">XL / XXL / S </span> </div>
+            <div class="price"> <span>$25</span> </div>
+            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Comprar </span> </a> </div>
+          </div>
+        </div>
+        <!--/.item-->
+        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="product">
+          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
+          <i class="glyphicon glyphicon-heart"></i>
+          </a>
+          
+            <div class="image">  
+          <div class="quickview">
+              <a title="Ver combo" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Ver combo </a>
+             </div><a href="product-details.html"><img src="images/product/combo2.jpg" alt="img" class="img-responsive"></a> </div>
+            <div class="description">
+              <h4><a href="product-details.html">Combo #6</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <span class="size">XL / XXL / S </span> </div>
+            <div class="price"> <span>$25</span> </div>
+            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Comprar </span> </a> </div>
+          </div>
+        </div>
+        <!--/.item-->
+        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="product">
+          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
+          <i class="glyphicon glyphicon-heart"></i>
+          </a>
+          
+            <div class="image">  
+          <div class="quickview">
+              <a title="Ver combo" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Ver combo </a>
+             </div><a href="product-details.html"><img src="images/product/combo3.jpg" alt="img" class="img-responsive"></a> </div>
+            <div class="description">
+              <h4><a href="product-details.html">Combo #7</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <span class="size">XL / XXL / S </span> </div>
+            <div class="price"> <span>$25</span> </div>
+            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Comprar </span> </a> </div>
+          </div>
+        </div>
+        <!--/.item-->
+        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="product">
+          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
+          <i class="glyphicon glyphicon-heart"></i>
+          </a>
+          
+            <div class="image">  
+          <div class="quickview">
+              <a title="Ver combo" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Ver combo </a>
+             </div><a href="product-details.html"><img src="images/product/combo4.jpg" alt="img" class="img-responsive"></a> </div>
+            <div class="description">
+              <h4><a href="product-details.html">Combo #8</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <span class="size">XL / XXL / S </span> </div>
+            <div class="price"> <span>$25</span> <span class="old-price">$75</span> </div>
+            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Comprar </span> </a> </div>
+          </div>
+        </div>
+        <!--/.item-->
+        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="product">
+          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
+          <i class="glyphicon glyphicon-heart"></i>
+          </a>
+          
+            <div class="image">  
+          <div class="quickview">
+              <a title="Ver combo" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Ver combo </a>
+             </div><a href="product-details.html"><img src="images/product/combo5.jpg" alt="img" class="img-responsive"></a> </div>
+            <div class="description">
+              <h4><a href="product-details.html">Combo #9</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <span class="size">XL / XXL / S </span> </div>
+            <div class="price"> <span>$25</span> </div>
+            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Comprar </span> </a> </div>
+          </div>
+        </div>
+        <!--/.item-->
+        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="product">
+          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
+          <i class="glyphicon glyphicon-heart"></i>
+          </a>
+          
+            <div class="image">  
+          <div class="quickview">
+              <a title="Ver combo" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Ver combo </a>
+             </div><a href="product-details.html"><img src="images/product/combo6.jpg" alt="img" class="img-responsive"></a>
+              <div class="promotion"> <span class="new-product"> NEW</span> <span class="discount">15% OFF</span> </div>
+            </div>
+            <div class="description">
+              <h4><a href="product-details.html">Combo #10</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <span class="size">XL / XXL / S </span> </div>
+            <div class="price"> <span>$25</span> </div>
+            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Comprar </span> </a> </div>
+          </div>
+        </div>
+        <!--/.item-->
+        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="product">
+          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
+          <i class="glyphicon glyphicon-heart"></i>
+          </a>
+          
+            <div class="image">  
+          <div class="quickview">
+              <a title="Ver combo" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Ver combo </a>
+             </div><a href="product-details.html"><img src="images/product/combo7.jpg" alt="img" class="img-responsive"></a>
+              <div class="promotion"> <span class="discount">15% OFF</span> </div>
+            </div>
+            <div class="description">
+              <h4><a href="product-details.html">Combo #11 </a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <span class="size">XL / XXL / S </span> </div>
+            <div class="price"> <span>$25</span> </div>
+            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Comprar </span> </a> </div>
+          </div>
+        </div>
+        <!--/.item-->
+        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="product">
+          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
+          <i class="glyphicon glyphicon-heart"></i>
+          </a>
+          
+            <div class="image">  
+          <div class="quickview">
+              <a title="Ver combo" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Ver combo </a>
+             </div><a href="product-details.html"><img src="images/product/combo8.jpg" alt="img" class="img-responsive"></a>
+              <div class="promotion"> <span class="new-product"> NEW</span> </div>
+            </div>
+            <div class="description">
+              <h4><a href="product-details.html">Combo #3 </a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <span class="size">XL / XXL / S </span> </div>
+            <div class="price"> <span>$25</span> </div>
+            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Comprar </span> </a> </div>
+          </div>
+        </div>
+        <!--/.item--> 
+      </div>
+      <!-- /.row -->
+      
+      <div class="row">
+        <div class="load-more-block text-center"> <a class="btn btn-thin" href="#"> <i class="fa fa-plus-sign">+</i> Ver más</a> </div>
+      </div>
+    </div>
+    <!--/.container--> 
+  </div>
+  <!--/.featuredPostContainer-->
+  
+ 
+  <!--/.section-block-->
+  
+  <!-- <div class="width100 section-block">
+    <h3 class="section-title"><span> BRAND</span> <a id="nextBrand" class="link pull-right carousel-nav"> <i class="fa fa-angle-right"></i></a> <a id="prevBrand" class="link pull-right carousel-nav"> <i class="fa fa-angle-left"></i> </a> </h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="no-margin brand-carousel owl-carousel owl-theme">
+          <li> <a><img src="images/brand/1.gif" alt="img"></a></li>
+          <li><img src="images/brand/2.png" alt="img"></li>
+          <li><img src="images/brand/3.png" alt="img"></li>
+          <li><img src="images/brand/4.png" alt="img"></li>
+          <li><img src="images/brand/5.png" alt="img"></li>
+          <li><img src="images/brand/6.png" alt="img"></li>
+          <li><img src="images/brand/7.png" alt="img"></li>
+          <li><img src="images/brand/8.png" alt="img"></li>
+          <li><img src="images/brand/1.gif" alt="img"></li>
+          <li><img src="images/brand/2.png" alt="img"></li>
+          <li><img src="images/brand/3.png" alt="img"></li>
+          <li><img src="images/brand/4.png" alt="img"></li>
+          <li><img src="images/brand/5.png" alt="img"></li>
+          <li><img src="images/brand/6.png" alt="img"></li>
+          <li><img src="images/brand/7.png" alt="img"></li>
+          <li><img src="images/brand/8.png" alt="img"></li>
+        </ul>
+      </div>
+    </div> -->
+    <!--/.row--> 
+  </div>
+  <!--/.section-block--> 
+  
+</div>
+<!--main-container-->
+
+<div class="parallax-section parallax-image-2">
+  <div class="w100 parallax-section-overley">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="parallax-content clearfix">
+            <h1 class="xlarge"> Obtén tu Giftcard</h1>
+            <h5 class="parallaxSubtitle"> Abona dinero a tu cuenta de Pide Rápido para realizar transacciones de manera más rápida </h5>
+			 <a class="btn btn-discover "> <i class="fa fa-shopping-cart"></i> Comprar </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/.parallax-section-->
+
+  <!-- Product Details Modal  -->
+    <div class="modal fade" id="product-details-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> × </button>
+                <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+
+                    <!-- product Image -->
+
+                    <div class="main-image  col-lg-12 no-padding style3">
+                        <a class="product-largeimg-link" href="product-details.html"><img src="images/zoom/zoom1.jpg" class="img-responsive product-largeimg" alt="img">
+                        </a>
+                    </div>
+                    <!--/.main-image-->
+                    
+                    <div class="modal-product-thumb">
+                        <a class="thumbLink selected"><img data-large="images/zoom/zoom1.jpg" alt="img" class="img-responsive" src="images/zoom/zoom1.jpg">
+                        </a>
+                        <a class="thumbLink"><img data-large="images/zoom/zoom2.jpg" alt="img" class="img-responsive" src="images/zoom/zoom2.jpg">
+                        </a>
+                        <a class="thumbLink"><img data-large="images/zoom/zoom3.jpg" alt="img" class="img-responsive" src="images/zoom/zoom3.jpg">
+                        </a>
+                    </div> <!--/.modal-product-thumb-->
+                </div> <!--/ product Image-->
+               
+                
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+                    <div class="modal-details-inner">
+                        <h1 class="product-title"> Lorem ipsum dolor sit amet</h1>
+                        <h3 class="product-code">Product Code : DEN1098</h3>
+                        <div class="product-price"> <span class="price-sales"> $70</span> <span class="price-standard">$95</span> </div>
+                        <div class="details-description">
+                            <p>In scelerisque libero ut elit porttitor commodo Suspendisse laoreet magna. </p>
+                        </div>
+                        <div class="color-details"> <span class="selected-color"><strong>COLOR</strong></span>
+                            <ul class="swatches Color">
+                                <li class="selected">
+                                    <a style="background-color:#f1f40e"> </a>
+                                </li>
+                                <li>
+                                    <a style="background-color:#adadad"> </a>
+                                </li>
+                                <li>
+                                    <a style="background-color:#4EC67F"> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.color-details-->
+
+                        <div class="productFilter productFilterLook2">
+                            <div class="filterBox">
+                                <select>
+                                    <option value="strawberries" selected="">Quantity
+                                    <option value="mango">1
+                                    <option value="bananas">2
+                                    <option value="watermelon">3
+                                    <option value="grapes">4
+                                    <option value="oranges">5
+                                    <option value="pineapple">6
+                                    <option value="peaches">7
+                                    <option value="cherries">8
+                                </select>
+                            </div>
+                            <div class="filterBox">
+                                <select>
+                                    <option value="strawberries" selected="">Size
+                                    <option value="mango">XL
+                                    <option value="bananas">XXL
+                                    <option value="watermelon">M
+                                    <option value="apples">L
+                                    <option value="apples">S
+                                </select>
+                            </div>
+                        </div>
+                        <!-- productFilter -->
+
+                        <div class="cart-actions">
+                            <div class="addto">
+                                <button onclick="productAddToCartForm.submit(this);" class="button btn-cart cart first" title="Comprar" type="button">Comprar</button>
+                                <a class="link-wishlist wishlist">Add to Wishlist</a> </div>
+                        </div>
+                        <!--/.cart-actions-->
+
+                        <div class="product-share clearfix">
+                            <p> SHARE </p>
+                            <div class="socialIcon">
+                                <a href="#"> <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#"> <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#"> <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#"> <i class="fa fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--/.product-share-->
+                    </div><!--/.modal-details-inner-->
+                </div>
+                <!--/.modal-details-->
+                <div class="clear"></div>
+            </div><!--/.modal-content-->
+        </div><!--/.modal-content-->
+    </div>
+    <!-- End Modal -->
+
+<footer>
+  <div class="footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+          <h3> Soporte </h3>
+          <ul>
+            <li class="supportLi">
+              <p> Lorem ipsum dolor sit amet, consectetur </p>
+              <h4> <a class="inline" href="callto:+8801680531352"> <strong> <i class="fa fa-phone"> </i> 88 01680 531352 </strong> </a> </h4>
+              <h4> <a class="inline" href="mailto:help@tshopweb.com"> <i class="fa fa-envelope-o"> </i> help@tshopweb.com </a> </h4>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+          <h3> Tienda </h3>
+          <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="category.html"> Category </a> </li>
+            <li> <a href="sub-category.html"> Sub Category </a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+          <h3> Información </h3>
+          <ul>
+            <li> <a href="product-details.html"> Product Details </a> </li>
+            <li> <a href="product-details-style2.html"> Product Details Version 2 </a> </li>
+            <li> <a href="cart.html"> Cart </a> </li>
+            <li> <a href="about-us.html"> About us </a> </li>
+            <li> <a href="about-us-2.html"> About us 2 </a> </li>
+            <li> <a href="contact-us.html"> Contact us </a> </li>
+            <li> <a href="contact-us-2.html"> Contact us 2 </a> </li>
+            <li> <a href="terms-conditions.html"> Terms &amp; Conditions </a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+          <h3> Mi Cuenta </h3>
+          <ul>
+            <li> <a href="account-1.html"> Account Login </a> </li>
+            <li> <a href="account.html"> My Account </a> </li>
+            <li> <a href="my-address.html"> My Address </a> </li>
+            <li> <a href="wishlist.html"> Wisth list </a> </li>
+            <li> <a href="order-list.html"> Order list </a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+          <h3> Mantente en Contacto </h3>
+          <ul>
+            <li>
+              <div class="input-append newsLatterBox text-center">
+                <input type="text" class="full text-center" placeholder="Email ">
+                <button class="btn  bg-gray" type="button"> Suscribir <i class="fa fa-long-arrow-right"> </i> </button>
+              </div>
+            </li>
+          </ul>
+          <ul class="social">
+            <li> <a href="http://facebook.com"> <i class=" fa fa-facebook"> &nbsp; </i> </a> </li>
+            <li> <a href="http://twitter.com"> <i class="fa fa-twitter"> &nbsp; </i> </a> </li>
+            <li> <a href="https://plus.google.com"> <i class="fa fa-instagram"> &nbsp; </i> </a> </li>
+            <li> <a href="http://youtube.com"> <i class="fa fa-youtube"> &nbsp; </i> </a> </li>
+          </ul>
+        </div>
+      </div>
+      <!--/.row--> 
+    </div>
+    <!--/.container--> 
+  </div>
+  <!--/.footer-->
+  
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="pull-left"> &copy; Pide Rápido 2015. Derechos reservados. </p>
+      <div class="pull-right paymentMethodImg"> <img height="30" class="pull-right" src="images/site/payment/master_card.png" alt="img"> <img height="30" class="pull-right" src="images/site/payment/paypal.png" alt="img"> <img height="30" class="pull-right" src="images/site/payment/american_express_card.png" alt="img"> <img height="30" class="pull-right" src="images/site/payment/discover_network_card.png" alt="img"> <img height="30" class="pull-right" src="images/site/payment/google_wallet.png" alt="img"> </div>
+    </div>
+  </div>
+  <!--/.footer-bottom--> 
+</footer>
+
+<!-- 
+  <div class="modal fade hide" id="modalAds" role="dialog">
+        <div class="modal-dialog  modal-bg-1">
+            <div class="modal-body-content">
+      		<a class="close" data-dismiss="modal">×</a>
+              <div class="modal-body">
+              <div class="col-lg-6 col-sm-8 col-xs-8">
+               <h3>enter your <br>email to  receive</h3>
+               <p class="discountLg">10% OFF </p>
+               <p>We invite you to subscribe to our newsletter and receive 10% discount.
+               </p>
+               
+              <div class="clearfx"> <form id="newsletter" class="newsletter">
+                           <input type="text" id="subscribe" name="s" placeholder="Enter email">
+                                        <button class="subscribe-btn">Subscribe</button>
+              </form></div>
+              
+             <p> <a href="category.html" class="link shoplink"> Buscar <i class="fa fa-caret-right"> </i> </a></p>
+              
+              
+              </div>
+              </div>
+  
+</div>
+</div>
+</div> -->
+<!-- Le javascript
+================================================== --> 
+
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="assets/js/jquery/1.8.3/jquery.js"></script> 
+<script src="assets/bootstrap/js/bootstrap.js"></script> 
+
+<script>
+ // this script required for subscribe modal
+$(window).load(function(){
+ // full load
+ $('#modalAds').modal('show');
+ $('#modalAds').removeClass('hide');
+});
+
+</script>
+
+<!-- include jqueryCycle plugin --> 
+<script src="assets/js/jquery.cycle2.js"></script> 
+
+<!-- include easing plugin --> 
+<script src="assets/js/jquery.easing.1.js"></script> 
+
+<!-- include  parallax plugin --> 
+<script type="text/javascript" src="assets/js/jquery.parallax-1.js"></script> 
+
+<!-- optionally include helper plugins --> 
+<script type="text/javascript" src="assets/js/helper-plugins/jquery.mousewheel.js"></script> 
+
+<!-- include mCustomScrollbar plugin //Custom Scrollbar  --> 
+
+<script type="text/javascript" src="assets/js/jquery.js"></script> 
+
+<!-- include checkRadio plugin //Custom check & Radio  --> 
+<script type="text/javascript" src="assets/js/ion-checkRadio/ion.checkRadio.js"></script> 
+
+<!-- include grid.js // for equal Div height  --> 
+<script src="assets/js/grids.js"></script> 
+
+<!-- include carousel slider plugin  --> 
+<script src="assets/js/owl.carousel.js"></script> 
+
+<!-- jQuery minimalect // custom select   --> 
+<script src="assets/js/jquery.minimalect.js"></script> 
+
+<!-- include touchspin.js // touch friendly input spinner component   --> 
+<script src="assets/js/bootstrap.js"></script> 
+
+<!-- include custom script for only homepage  --> 
+<script src="assets/js/home.js"></script> 
+<!-- include custom script for site  --> 
+<script src="assets/js/script.js"></script> 
+<script>
+
+</script>
+</body>
+</html>

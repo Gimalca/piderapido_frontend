@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <title>AdminDesigns - SHARED ON THEMELOCK.COM</title>
+    <meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
+    <meta name="description" content="AdminDesigns - SHARED ON THEMELOCK.COM">
+    <meta name="author" content="AdminDesigns">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font CSS (Via CDN) -->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/theme.css">
+
+    <!-- Admin Forms CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-forms/css/admin-forms.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+   <![endif]-->
+
+</head>
+
+<body class="charts-highcharts-page" data-spy="scroll" data-target="#nav-spy" data-offset="100">
+
+    <!-- Start: Main -->
+    <div id="main">
+        
+		<section id="content_wrapper">
+
+             <section id="content" class="table-layout animated fadeIn">
+
+                <!-- begin: .tray-left -->
+               
+                <!-- begin: .tray-center -->
+                <div class="tray tray-center p40 va-t posr">
+				
+				<div class="row mb10">
+                    <div class="col-md-3">
+                        <br><br>
+                        <div class="panel bg-alert light of-h mb10">
+                            <div class="pn pl20 p5">
+                                <div class="icon-bg"> <i class="fa fa-comments-o"></i> </div>
+                                <h2 class="mt15 lh15"> <b>523</b> </h2>
+                                <h5 class="text-muted">Saldo de ventas historico</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <br><br>
+                        <div class="panel bg-info light of-h mb10">
+                            <div class="pn pl20 p5">
+                                <div class="icon-bg"> <i class="fa fa-twitter"></i> </div>
+                                <h2 class="mt15 lh15"> <b>348</b> </h2>
+                                <h5 class="text-muted">Número de pedidos</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <br><br>
+                        <div class="panel bg-danger light of-h mb10">
+                            <div class="pn pl20 p5">
+                                <div class="icon-bg"> <i class="fa fa-bar-chart-o"></i> </div>
+                                <h2 class="mt15 lh15"> <b>267</b> </h2>
+                                <h5 class="text-muted">Visitas</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel-body bg-light dark">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Sucursal</h3>
+                                    <label class="switch block mt15">
+                                        <div class="switch switch-success round switch-inline">
+                                            <input id="exampleCheckboxSwitch1" type="checkbox">
+                                            <label for="exampleCheckboxSwitch1" data-on="SI" data-off="NO"></label>
+                                            <span>Abierto</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-md-6" id="portal">
+                                    <h3>Portal</h3>
+                                    <label class="switch block mt15">
+                                        <div class="switch switch-success round switch-inline">
+                                            <input id="exampleCheckboxSwitch2" type="checkbox">
+                                            <label for="exampleCheckboxSwitch2" data-on="SI" data-off="NO"></label>
+                                            <span>Activo</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="admin-form">
+                    <div class="row">
+                        <div class="col-md-12">                        
+                            <div class="panel">
+                                 <div class="panel-heading">
+                                    <span class="panel-title">
+                                        <h3>Últimos Pedidos</h3>
+                                    </span>
+                                </div>
+                                <div class="panel-body pn">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th># Pedido</th>
+                                                <th>Total</th>
+                                                <th>Detalle</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2686164464</td>                                            
+                                                <td>1500 Bs</td>
+                                                <td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal1">Ver Detalle</button></td>
+                                                <td>
+                                                    <button class="btn btn-success br2 btn-xs fs12 dropdown-toggle" aria-expanded="false" type="button" disabled>
+                                                        Retirado
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1894153465</td>                                            
+                                                <td>1450 Bs</td>
+                                                 <td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal1" >Ver Detalle</button></td>
+                                                <td>
+                                                    <button class="btn btn-warning br2 btn-xs fs12 dropdown-toggle" aria-expanded="false" type="button" disabled>
+                                                        Por retirar
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4156414683</td>                                            
+                                                <td>1250 Bs</td>
+                                                 <td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal1">Ver Detalle</button></td>
+                                                <td>
+                                                    <button class="btn btn-warning br2 btn-xs fs12 dropdown-toggle" aria-expanded="false" type="button" disabled>
+                                                        Por retirar
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2564185646</td>                                            
+                                                <td>2500 Bs</td>
+                                                 <td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal1">Ver Detalle</button></td>
+                                                <td>
+                                                    <button class="btn btn-danger br2 btn-xs fs12 dropdown-toggle" aria-expanded="false" type="button" disabled>
+                                                        Por hacer
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <!-- Filterable Column Chart -->
+                    <div class="panel" id="pchart3">
+                        <div class="panel-heading">
+                            <span class="panel-title text-info fw700"><i class="fa fa-pencil hidden"></i> Filterable Column Chart</span>
+                        </div>
+                        <div class="panel-menu hidden">
+                            <div class="chart-legend" data-chart-id="#high-line">
+                                <button type="button" data-chart-id="0" class="legend-item btn btn-sm btn-primary mr10">Data 1</button>
+                                <button type="button" data-chart-id="1" class="legend-item btn btn-info btn-sm">Data 2</button>
+                            </div>
+                        </div>
+                        <div class="panel-body pn">
+                            <div id="high-line" style="width: 100%; height: 275px; margin: 0 auto"></div>
+
+                            <div class="p15 pt5 mt15 bg-light br-t">
+                                <table class="table mbn admin-form fs13 table-legend" data-chart-id="#high-line">
+                                    <thead>
+                                        <tr class="">
+                                            <th class="w30">ID</th>
+                                            <th class="w50">Chart</th>
+                                            <th>Page Source</th>
+                                            <th class="text-right">Page Hits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fs15 fw700">1.</td>
+                                            <td>
+                                                <label class="switch switch-custom block mbn">
+                                                    <input type="checkbox" class="legend-switch" name="features" id="s1" value="0">
+                                                    <label for="s1" data-on="ON" data-off="OFF"></label>
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td class="va-m fw600 text-muted">
+                                                <span class="news-sprite yahoo mr15"></span>www.yahoo.com/race-car-rally
+                                            </td>
+                                            <td class="fs15 fw700 text-right">18,625</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fs15 fw700">2.</td>
+                                            <td>
+                                                <label class="switch switch-custom block mbn">
+                                                    <input type="checkbox" class="legend-switch" name="features" id="s2" value="1">
+                                                    <label for="s2" data-on="ON" data-off="OFF"></label>
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td class="va-m fw600 text-muted">
+                                                <span class="news-sprite yahoo mr15"></span>www.yahoo.com/sports/soccer/brazil-fans-outcheer
+                                            </td>
+                                            <td class="fs15 fw700 text-right">11,812</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fs15 fw700">2.</td>
+                                            <td>
+                                                <label class="switch switch-custom block mbn">
+                                                    <input type="checkbox" class="legend-switch" name="features" id="s3" value="2">
+                                                    <label for="s3" data-on="ON" data-off="OFF"></label>
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td class="va-m fw600 text-muted">
+                                                <span class="news-sprite fb mr15"></span>www.facebook.com/news/actor-bill_thornberry-passes-at-42
+                                            </td>
+                                            <td class="fs15 fw700 text-right">6,149</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fs15 fw700">2.</td>
+                                            <td>
+                                                <label class="switch switch-custom block mbn">
+                                                    <input type="checkbox" class="legend-switch" name="features" id="s4" value="3">
+                                                    <label for="s4" data-on="ON" data-off="OFF"></label>
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td class="va-m fw600 text-muted">
+                                                <span class="news-sprite cnn mr15"></span>www.cnn.com/money/stock-market-races-to-glorious-open
+                                            </td>
+                                            <td class="fs15 fw700 text-right">2,525</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				
+				
+                <!-- end: .tray-center -->
+
+            </section>
+            <!-- End: Content -->
+
+        </section>
+
+    </div>
+   
+   <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Detalle del pedido (3:30pm)</h4>
+              </div>
+              <div class="modal-body">
+                <div class="panel">
+                    <div class="panel-body pn">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2152</td>
+                                    <td>Big Mac</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>1685</td>
+                                    <td>Cuarto de libra</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1961</td>
+                                    <td>Cajita Feliz</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>2642</td>
+                                    <td>Mc Pollo</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <style>
+    
+    /* nav fixed settings */
+    ul.tray-nav.affix {
+        width: 319px;
+        top: 80px;
+    }
+    </style>
+
+    <!-- BEGIN: PAGE SCRIPTS -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="vendor/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Sparklines CDN -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+    <!-- Charts JS -->
+    <script type="text/javascript" src="vendor/plugins/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="vendor/plugins/circles/circles.js"></script>
+    <script type="text/javascript" src="vendor/plugins/raphael/raphael.js"></script>
+
+    <!-- Theme Javascript -->
+    <script type="text/javascript" src="assets/js/utility/utility.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/demo.js"></script>
+
+    <!-- Page Javascript -->
+    <script type="text/javascript" src="assets/js/pages/charts/highcharts.js"></script>
+
+    <script type="text/javascript">
+	
+	$( "#exampleCheckboxSwitch1" ).click(function() {
+                $( "#portal" ).slideToggle("slow");
+            });
+        jQuery(document).ready(function() {
+
+            "use strict";
+
+            // Init Theme Core    
+            Core.init();
+
+            // Init Theme Core    
+            Demo.init();
+
+            // This page contains more Initilization Javascript than normal.
+            // As a result it has its own js page. See charts.js for more info
+            demoHighCharts.init();
+
+            // Init tray navigation smooth scroll
+            $('.tray-nav a').smoothScroll({
+                offset: -70
+            });
+
+
+        });
+    </script>
+    <!-- END: PAGE SCRIPTS -->
+
+</body>
+
+</html>
